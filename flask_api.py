@@ -13,16 +13,7 @@ app = Flask(__name__)
 @app.route("/status")
 def alive():
     """
-    This function checks the running API status.
-    It will return the "Alive!" string if the API is well running.
-    get:
-        summary: status endpoint
-        description: Check the API status
-        parameters:
-            None
-        responses:
-            200:
-                The "Alive!" string
+    return The "Alive!" string if running
     """
     return "Alive!"
 
